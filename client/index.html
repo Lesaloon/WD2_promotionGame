@@ -7,17 +7,48 @@
 <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
 </head>
 <body>
-    
-    <div class="terminal"></div>
-    <script>
-        $('.terminal').terminal({
-            hello: function(what) {
-                this.echo('Hello, ' + what +
-                          '. Wellcome to this terminal.');
-            }
-        }, {
-            greetings: 'This is the terminal write command and be prepaired'
-        });
-        </script>
+    <div class="grid-container">
+        
+        <div class="leftSide">
+            <img class="BlumeLogo" src="https://static.wikia.nocookie.net/watchdogscombined/images/2/22/Blume_Logo.png" alt="blumelogo">
+            <div class="Timer">TEMPS RESTANT : <span class="time">58</span></div> <br>
+            <div class="ServerListTitle">
+                
+                LISTE DES SERVEURS :  </div>
+            <div class="ServerList">
+                <div class="serverdivs">Server213 : <div class="ProgressBar"></div> </div> 
+                <div class="serverdivs">Server654 : <div class="ProgressBar"></div> </div>
+                <div class="serverdivs">Server842 : <div class="ProgressBar"></div> </div>
+                <div class="serverdivs">Server015 : <div class="ProgressBar"></div> </div>
+                <div class="serverdivs">Server056 : <div class="ProgressBar"></div> </div>
+                <div class="serverdivs">Server436 : <div class="ProgressBar"></div> </div>
+                <div class="serverdivs">Server765 : <div class="ProgressBar"></div> </div>
+            </div>
+        </div>
+        <div class="terminal"></div>
+        <div class="playerList">
+            <h3>LISTE DES JOUEURS : </h3>
+            <div class="rightSide">
+                <li>Lesaloon</li>
+                <li>Raptor</li>
+                <li>Blackstorm</li>
+                <li>Yamory</li>
+            </div>
+        </div>
+        <div class="Commands"">
+            <img class="BombImage" src="http://www.clker.com/cliparts/y/e/Q/T/p/N/red-bomb.svg.hi.png" alt="bomb" srcset="">
+            <div class="CommandsList"">
+                <h3>Commands :</h3>
+                <li>login</li>
+                <li>clear</li>
+                <li>attack</li>
+                <li>loot</li>
+                <li>kill</li>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
